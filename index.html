@@ -46,9 +46,9 @@
     <!--target _blank : 새로운 창으로 링크 연결-->
     <p>
       클릭 :
-      <a href="https://www.naver.com/" target="_blank"
-        >Naver (새창열기 : blank)</a
-      >
+      <a href="https://www.naver.com/" target="_blank">
+        Naver (새창열기 : blank)
+      </a>
     </p>
 
     <!--4. 리스트 태그-->
@@ -82,6 +82,7 @@
           <td>역할</td>
         </tr>
       </thead>
+
       <tbody>
         <tr>
           <td>HTML</td>
@@ -100,7 +101,67 @@
 
     <!--6. 입력 태그-->
     <h3>6. 입력 태그</h3>
-    <p>input tag, textarea tag : 텍스트 입력 기능</p>
-    작성자 : <input type="text" /> 입력내용 : <textarea></textarea>
+
+    <h2>필수 입력 정보</h2>
+
+    <!--div는 태그들을 묶는다. 일반적으로 label과 input을 div로 묶는다 -> 블록요소(한 줄 차지)-->
+    <div>
+      <label>이름</label>
+      <input type="text" />
+    </div>
+
+    <div>
+      <label>생년월일</label>
+      <input type="date" />
+    </div>
+
+    <div>
+      <label>성별</label>
+      <select>
+        <option>남성</option>
+        <option>여성</option>
+      </select>
+    </div>
+
+    <h2>개발자는 왜?</h2>
+    <textarea></textarea>
+
+    <h2>사용해본것들?</h2>
+    <!--checkbox는 다중선택가능-->
+    <div>
+      <input type="checkbox" />
+      <label>Java</label>
+    </div>
+
+    <div>
+      <input type="checkbox" />
+      <label>Python</label>
+    </div>
+
+    <div>
+      <input type="checkbox" />
+      <label>C</label>
+    </div>
+
+    <div>
+      <input type="checkbox" />
+      <label>SQL</label>
+    </div>
+
+    <div>
+      <input type="checkbox" />
+      <label>JS</label>
+    </div>
+
+    <div>
+      <input type="checkbox" />
+      <label>Spring</label>
+    </div>
+
+    <h2>희망 부서</h2>
+    <!--radio버튼은 택 1이므로, name속성으로 묶어주어야한다.-->
+    <input type="radio" name="dept" /><label>프론트엔드</label>
+    <input type="radio" name="dept" /><label>백엔드</label>
+    <input type="radio" name="dept" /><label>데이터베이스</label>
   </body>
 </html>
